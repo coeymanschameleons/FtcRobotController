@@ -3,6 +3,9 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 
+/**
+ * Autonomous mode code goes here
+ */
 @Autonomous(name="Autonomous Mode", group="Robot")
 public class AutoMode extends OpMode {
     @Override
