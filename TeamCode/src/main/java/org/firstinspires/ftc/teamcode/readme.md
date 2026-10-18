@@ -1,3 +1,6 @@
+# Coeymans Chameleons robot controller
+I've scaffolded a teleop and automode, please add your code. See below for the FTC readme.
+
 ## TeamCode Module
 
 Welcome!
