@@ -25,6 +25,7 @@ public class RobotHardware {
     }
 
     private void _init() throws Exception {
+        // set up motors
         frontLeftDrive = this.getDcMotor("frontLeft");
         frontRightDrive = this.getDcMotor("frontRight");
         backLeftDrive = this.getDcMotor("backLeft");
