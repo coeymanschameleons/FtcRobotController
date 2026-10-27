@@ -18,7 +18,7 @@ public class ContactChameleon {
     }
 
     public static String getCopyrightInfo() {
-        return "Copyright (c) 2026 FIRST, Ravena Innovation Station, "+teamName+copyrightInfo;
+        return String.format("Copyright (c) 2026 FIRST, Ravena Innovation Station, %s. %s.", teamName, copyrightInfo);
     }
 
     public static String getEmail() {
