@@ -30,6 +30,7 @@ public class TelemetryPrinter {
     }
 
     public void error(Exception e) {
+        this.print("A problem has been detected and Coeymans Chameleons Robot Controller would have been shut down if not detected.");
         String type = e.getClass().getName();
         String cause = e.getMessage();
         String trace = Arrays.toString(e.getStackTrace());

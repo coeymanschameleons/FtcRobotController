@@ -10,6 +10,8 @@ import com.qualcomm.robotcore.hardware.IMU;
 
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 
+import java.util.Arrays;
+
 /**
  * See org.firstinspires.ftc.robotcontroller.external.samples.externalhardware.RobotHardware for the FTC example
  */
@@ -120,7 +122,7 @@ public class RobotHardware {
      * @param offset
      */
     public void setHandPositions (double offset) {
-        offset = Range.clip(offset, -0.5, 0.5);
+//        offset = Range.clip(offset, -0.5, 0.5);
         // set positions, here is the ftc sample code
         /*
          leftHand.setPosition(MID_SERVO + offset);
@@ -134,7 +136,7 @@ public class RobotHardware {
             this._init();
         } catch (Exception e) {
             opMode.telemetry.addData(">", "Hardware initialization FAILED!");
-            throw new RobotHardwareInitializationFailed(e.getMessage() + "\n" + e.getStackTrace().toString());
+            throw new RobotHardwareInitializationFailed(e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
         }
     }
 }
