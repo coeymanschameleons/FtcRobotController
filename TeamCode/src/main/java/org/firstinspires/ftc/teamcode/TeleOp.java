@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode;
 
+import static java.lang.String.format;
+
 /**
  * Teleop mode code goes here
  */
@@ -47,7 +49,7 @@ public class TeleOp extends RobotOpMode {
         }
         if (Math.abs(lx) > 0.5) {
             this.turn = lx;
-            telemetryPrinter.debug("turn = "+String.valueOf(this.turn));
+            telemetryPrinter.debug(format("turn = %s", String.valueOf(this.turn)));
         } else {
             telemetryPrinter.debug("Not enough push to turn");
             this.turn = 0;
