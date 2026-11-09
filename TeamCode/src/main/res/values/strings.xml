@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Coeymans Chameleons Robot Controller</string>
-
+    <string name="initializing_hardware_message">Initializing hardware...</string>
+    <string name="bsod_caption_base">A problem has been detected and Coeymans Chameleons Robot Controller </string>
+    <string name="bsod_caption_after_fatal">has been shut down to prevent a potential robot safety issue</string>
+    <string name="bsod_caption_after_nonfatal">would have been shut down if it weren\'t caught.</string>
+    <string name="hardware_initialization_failed">Hardware initialization FAILED!</string>
+    <string name="teamname_short">Chameleons</string>
+    <string name="hello_who_during_init_loop">Chameleons during init_loop</string>
+    <string name="drive_equals_s">drive = %s</string>
+    <string name="drive2_equals_s">drive2 = %s</string>
+    <string name="not_enough_push_to_move_left_to_right">Not enough push to move left-to-right</string>
+    <string name="turn_equals_s">turn = %s</string>
+    <string name="not_enough_push_to_turn">Not enough push to turn</string>
+    <string name="not_enough_push_to_move_fwd_back">Not enough push to move fwd/back</string>
+    <string name="starting_teleop">Starting TeleOp...</string>
+    <string name="stopping_teleop">Stopping TeleOp...</string>
+    <string name="init_loop">INIT_LOOP</string>
+    <string name="starting_automode">Starting AutoMode...</string>
+    <string name="chameleons_on_the_bot">Chameleons on the bot</string>
+    <string name="stopping_automode">Stopping AutoMode...</string>
+    <string name="pollen_servo">spindexer</string>
 </resources>

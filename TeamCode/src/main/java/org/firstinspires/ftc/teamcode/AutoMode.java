@@ -12,28 +12,28 @@ public class AutoMode extends RobotOpMode {
 
     @Override
     public void init() {
-        telemetryPrinter.helloWorld("Chameleons");
+        telemetryPrinter.helloWorld(hardwareMap.appContext.getString(R.string.teamname_short));
     }
 
     @Override
     public void init_loop() {
-        telemetryPrinter.helloWorld("Chameleons");
+        telemetryPrinter.helloWorld(hardwareMap.appContext.getString(R.string.hello_who_during_init_loop));
     }
 
     @Override
     public void start() {
-        telemetryPrinter.print("Staring AutoMode...");
+        telemetryPrinter.print(hardwareMap.appContext.getString(R.string.starting_automode));
 
     }
 
     @Override
     public void loop() {
-        telemetryPrinter.helloWorld("Chameleons on the bot");
+        telemetryPrinter.helloWorld(hardwareMap.appContext.getString(R.string.chameleons_on_the_bot));
     }
 
     @Override
     public void stop() {
-        telemetryPrinter.print("Stopping AutoMode...");
+        telemetryPrinter.print(hardwareMap.appContext.getString(R.string.stopping_automode));
     }
 
 }

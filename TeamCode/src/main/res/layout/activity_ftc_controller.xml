@@ -134,12 +134,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
         <LinearLayout
             android:id="@+id/cameraMonitorViewId"
-            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            />
+            android:visibility="visible" />
 
         </LinearLayout>
 
@@ -159,20 +158,20 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </FrameLayout>
 
     <TextView
-      android:id="@+id/textGamepad1"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_above="@+id/textGamepad2"
-      android:visibility="invisible"
-      android:text="" />
+        android:id="@+id/textGamepad1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textGamepad2"
+        android:text=""
+        android:visibility="visible" />
 
     <TextView
-      android:id="@+id/textGamepad2"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:visibility="invisible"
-      android:text="" />
+        android:id="@+id/textGamepad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:visibility="visible" />
 
   </RelativeLayout>
 

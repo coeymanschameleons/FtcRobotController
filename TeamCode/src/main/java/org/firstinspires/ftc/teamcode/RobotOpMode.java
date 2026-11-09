@@ -5,27 +5,27 @@ public class RobotOpMode extends com.qualcomm.robotcore.eventloop.opmode.OpMode 
     TelemetryPrinter telemetryPrinter = new TelemetryPrinter(this);
     @Override
     public void init() {
-        telemetry.addData("Hello", "Chameleons");
+        telemetryPrinter.helloWorld(hardwareMap.appContext.getString(R.string.teamname_short));
     }
 
     @Override
     public void init_loop() {
-        telemetry.addData("Hello", "Chameleons during init_loop");
+        telemetryPrinter.helloWorld(hardwareMap.appContext.getString(R.string.hello_who_during_init_loop));
     }
 
     @Override
     public void start() {
-        telemetry.addData(">", "Starting AutoMode...");
+        telemetryPrinter.print(hardwareMap.appContext.getString(R.string.starting_automode));
 
     }
 
     @Override
     public void loop() {
-        telemetry.addData("Hello", "Chameleons on the bot");
+        telemetryPrinter.helloWorld(hardwareMap.appContext.getString(R.string.chameleons_on_the_bot));
     }
 
     @Override
     public void stop() {
-        telemetry.addData(">", "Stopping AutoMode...");
+        telemetryPrinter.print(hardwareMap.appContext.getString(R.string.stopping_automode));
     }
 }
