@@ -51,8 +51,10 @@ public class TelemetryPrinter {
         String message = String.format("%s: %s\n%s", type, cause, trace);
         this._log("error", message);
 
-        while (fatal) {
-            noop();
+        if (fatal) {
+            while (true) {
+                noop();
+            }
         }
     }
 

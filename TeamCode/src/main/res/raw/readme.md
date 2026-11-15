@@ -1,1 +1,1 @@
-Place your sound files in this folder to use them as project resources.
+Place your sound effects here to let them play on the robot (eventually).
