@@ -95,7 +95,7 @@ public class TeleOp extends RobotOpMode {
             }
         }
 
-        telemetryPrinter.print(String.format("Indexing status: %s", robot.isSpendexerIndexing ? "Moving": "Ready"));
+        telemetryPrinter.print(String.format(hardwareMap.appContext.getString(R.string.indexing_status_s), robot.isSpendexerIndexing ? hardwareMap.appContext.getString(R.string.moving): hardwareMap.appContext.getString(R.string.ready)));
 
         robot.driveField(this.drive, this.drive2, this.turn, heading);
         this.lastAButtonState = a;

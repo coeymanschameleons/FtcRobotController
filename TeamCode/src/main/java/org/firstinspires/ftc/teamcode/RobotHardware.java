@@ -29,6 +29,7 @@ public class RobotHardware {
     private DcMotor frontRightDrive  = null;
     private DcMotor backLeftDrive   = null;
     private DcMotor backRightDrive  = null;
+    private DcMotor spinner1 = null;
     private Servo spendexerWheel = null;
     public boolean isSpendexerIndexing = false;
     IMU imu = null;
@@ -62,6 +63,7 @@ public class RobotHardware {
         backLeftDrive = this.getDcMotor("backLeft");
         backRightDrive = this.getDcMotor("backRight");
         spendexerWheel = this.getServo(opMode.hardwareMap.appContext.getString(R.string.pollen_servo));
+        spinner1 = this.getDcMotor("spinner1");
         // set up imu
         imu = getImu("imu");
         parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
@@ -76,6 +78,7 @@ public class RobotHardware {
         frontRightDrive.setDirection(DcMotorSimple.Direction.FORWARD);
         backLeftDrive.setDirection(DcMotorSimple.Direction.REVERSE);
         backRightDrive.setDirection(DcMotorSimple.Direction.FORWARD);
+        spinner1.setDirection(DcMotorSimple.Direction.FORWARD);
         spendexerWheel.setDirection(Servo.Direction.FORWARD);
         uptime.reset(); // do not reset after
         timer.reset();
@@ -112,7 +115,7 @@ public class RobotHardware {
         double rawPosition = spendexerWheel.getPosition();
         double _360degPosition = rawPosition * 360;
         double _180degPosition;
-        _180degPosition = rawPosition - 180;
+        _180degPosition = _360degPosition - 180;
 
         return _180degPosition;
     }

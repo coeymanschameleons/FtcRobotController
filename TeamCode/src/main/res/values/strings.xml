@@ -21,4 +21,9 @@
     <string name="chameleons_on_the_bot">Chameleons on the bot</string>
     <string name="stopping_automode">Stopping AutoMode...</string>
     <string name="pollen_servo">spindexer</string>
+    <string name="indexing_status_s">Indexing status: %s</string>
+    <string name="moving">Moving</string>
+    <string name="ready">Ready</string>
+    <string name="starting_contactchameleon">Loading copyright info...</string>
+    <string name="stopping_contactchameleon">Thank you for using Coeymans Chameleons Robot Controller!</string>
 </resources>

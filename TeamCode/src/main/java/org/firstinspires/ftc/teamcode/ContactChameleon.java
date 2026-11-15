@@ -6,26 +6,29 @@ package org.firstinspires.ftc.teamcode;
 public class ContactChameleon {
     protected static String teamName = "Coeymans Chameleons";
     protected static int teamNumber = 32497;
-    protected static String copyrightInfo = "Licensed under the BSD 3-Clause Clear License";
+    protected static String copyrightInfo = "Licensed under the GNU Affero General Public License version 3";
     protected static String email = "ravenainnovationstation@gmail.com";
 
-    public static String getTeamName() {
+    ContactChameleon(){}
+
+    public String getTeamName() {
         return teamName;
     }
 
-    public static int getTeamNumber() {
+    public int getTeamNumber() {
         return teamNumber;
     }
 
-    public static String getCopyrightInfo() {
-        return String.format("Copyright (c) 2026 FIRST, Ravena Innovation Station, %s. %s.", teamName, copyrightInfo);
+    public String getCopyrightInfo() {
+        return String.format("Copyright (c) 2026 FIRST, Ravena Innovation Station, %s. %s.", this.getTeamName(), copyrightInfo);
     }
 
-    public static String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public static String getContactInfo(){
-        return String.format("%s\nTeam number: %s\nTeam email: %s", getCopyrightInfo(), getTeamNumber(), getEmail());
+    public String getContactInfo(){
+        return String.format("%s\nTeam number: %s\nTeam email: %s", this.getCopyrightInfo(), this.getTeamNumber(), this.getEmail());
     }
+
 }
